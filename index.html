@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Slay girl</title>
+  
+  <link href="style.css" rel="stylesheet" type="text/css" />
+  <style>
+    img{
+        height: auto;
+        width: 600px;
+    }
+  </style>
+    h1 {
+        color: red;
+    }
+
+</head>
+
+<body>
+  <h1>hey babes </h1>
+  <p> ur gorg</p>
+  <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj15hczLLw9Qhz0ppE6CHZHgaJqEz2qoDAks8ktfHV-wBgjgXa0JRtZoCg_Us5cUx3B5QxDg2Zi07S2A5zGET6lC46rdY-dLIsvc02iUB1LBKz9qMxRjZmvm9Rg1AnL6bwV-EScNvRES14/s1600/Sympathy+for+Raquelle1.png">
+  <blockquote>i luv hammerhacks </blockquote>
+  <button onclick="changeQuote()">Change Quote</button>
+  <script>
+    var index = 0;
+
+    function changeQuote() {
+        var quotes = [
+            `idk how to code`,
+            `i copied and pasted this`,
+            `thanks chun han`,
+            `maple was here 2024`,
+        ];
+
+        var blockquote = document.querySelector("blockquote");
+        blockquote.innerhtml = quotes[index];
+
+        index++;
+        if (index >= 4) {
+            index = 0;
+        }
+    }
+  </script>
+</body>
+
+</html>
